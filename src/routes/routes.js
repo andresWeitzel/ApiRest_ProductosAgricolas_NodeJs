@@ -2,7 +2,7 @@ const { Router } = require("express");
 
 const router = Router();
 
-router.get('/', (req, resp) => {
+router.get('/test', (req, resp) => {
 
     const data={
         "id" : 121212,

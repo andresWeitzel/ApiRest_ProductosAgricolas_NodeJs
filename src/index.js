@@ -1,4 +1,5 @@
 import app from './app';
+import './database';
 
 
 //Starting the server

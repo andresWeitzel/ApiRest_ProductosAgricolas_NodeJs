@@ -16,10 +16,12 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 
+//Url api base
+app.use('/api/v1/productos',routes);
+
+
 //Routes
 app.use(routes);
-
-
 
 
 export default app;
