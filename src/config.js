@@ -1,0 +1,8 @@
+
+import {config} from 'dotenv';
+
+config();
+
+export default{
+    mongoUrl : process.env.MONGODB_URL,
+}
