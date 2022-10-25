@@ -1,9 +1,8 @@
-const express = require('express');
-const morgan = require('morgan');
+import express from 'express';
+import morgan from 'morgan';
+import routes from './routes/routes'
+
 const app = express();
-
-const routes = require('./routes/routes');
-
 
 
 //Settings
