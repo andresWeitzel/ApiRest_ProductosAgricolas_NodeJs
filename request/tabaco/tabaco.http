@@ -1,0 +1,23 @@
+###
+GET http://localhost:3000/api/v1/productos/tabaco
+
+###
+POST http://localhost:3000/api/v1/productos/tabaco
+Content-Type: application/json
+
+{
+        "sector_id" : 32,
+        "sector_nombre": "Tabaco",
+        "variable_id": 841,
+        "actividad_producto_nombre": "Cigarrillos 30 unidades",
+        "indicador":"Precio interno inferior",
+        "unidad_de_medida":"$/paquete",
+        "fuente":"MAGYP",
+        "frecuencia_nombre":"Mensual",
+        "cobertura_nombre":"Nacional",
+        "alcance_tipo":"PAIS",
+        "alcance_id":200,
+        "alcance_nombre":"Argentina",
+        "indice_tiempo":"2022-10-26",
+        "valor":2.2
+    }

@@ -5,7 +5,7 @@ const tabacoSchema = new Schema({
     sector_id: {
         type: Number,
         required: true,
-        unique: true
+        unique: false
     },
     sector_nombre: {
         type: String,
@@ -65,7 +65,7 @@ const tabacoSchema = new Schema({
     indice_tiempo: {
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     valor: {
         type: Number,
@@ -74,7 +74,8 @@ const tabacoSchema = new Schema({
     }
 
 },{
-    versionKey:false
+    versionKey:false,
+    timestamps:true
 })
 
 //data model
