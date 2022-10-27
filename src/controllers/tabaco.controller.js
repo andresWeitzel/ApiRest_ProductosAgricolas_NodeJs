@@ -1,14 +1,8 @@
 const { default: Tabaco } = require("../models/Tabaco");
 
-//========= GET ALL ========
-export const findAllTabaco = async (req, resp) => {
-  const data = await Tabaco.find();
-
-  resp.json(data);
-};
 
 //=========== POST ============
-export const createTabaco = async (req, resp) => {
+export const createObj = async (req, resp) => {
   let tabaco = await new Tabaco({
     sector_id: req.body.sector_id,
 
@@ -44,3 +38,28 @@ export const createTabaco = async (req, resp) => {
   console.log("Nuevo objeto enviado");
   resp.json(tabaco);
 };
+
+//========= DELETE ========
+export const deleteObj = async (req, resp) => {
+    
+   await Tabaco.findByIdAndDelete(req.params.id);
+  
+    resp.json(`EL OBJETO CON EL ID ${id} HA SIDO ELIMINADO CORRECTAMENTE`);
+  };
+
+//========= GET ALL ========
+export const getAllObj = async (req, resp) => {
+    const data = await Tabaco.find();
+  
+    resp.json(data);
+  };
+
+
+//========= GET BY ID ========
+export const getById = async (req, resp) => {
+    
+    let data = await Tabaco.findById(req.params.id);
+  
+    resp.json(data);
+  };
+  

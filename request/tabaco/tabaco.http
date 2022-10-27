@@ -1,13 +1,10 @@
-###
-GET http://localhost:3000/api/v1/productos/tabaco
 
 ###
 POST http://localhost:3000/api/v1/productos/tabaco
 Content-Type: application/json
 
 {
-        "__id":"asdadsaaad",
-        "sector_id" : 324,
+        "sector_id" : 100,
         "sector_nombre": "Tabaco",
         "variable_id": 841,
         "actividad_producto_nombre": "Cigarrillos 30 unidades",
@@ -17,8 +14,18 @@ Content-Type: application/json
         "frecuencia_nombre":"Mensual",
         "cobertura_nombre":"Nacional",
         "alcance_tipo":"PAIS",
-        "alcance_id":200,
+        "alcance_id":2200,
         "alcance_nombre":"Argentina",
         "indice_tiempo":"2022-12-26",
         "valor":2.2
     }
+
+
+###
+GET http://localhost:3000/api/v1/productos/tabaco
+
+###
+GET http://localhost:3000/api/v1/productos/tabaco/6359c448f89b86ebdf0c74fb
+
+###
+DELETE http://localhost:3000/api/v1/productos/tabaco/6359cbfc00e21ca01dc0be82
