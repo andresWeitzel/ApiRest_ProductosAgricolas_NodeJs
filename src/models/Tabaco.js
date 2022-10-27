@@ -2,6 +2,7 @@ import { Schema, model } from 'mongoose'
 
 //data schema
 const tabacoSchema = new Schema({
+   
     sector_id: {
         type: Number,
         required: true,
@@ -34,7 +35,7 @@ const tabacoSchema = new Schema({
     },
     fuente: {
         type: String,
-        required: false,
+        required: true,
         unique: false
     },
     frecuencia_nombre:  {

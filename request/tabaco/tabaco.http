@@ -6,7 +6,8 @@ POST http://localhost:3000/api/v1/productos/tabaco
 Content-Type: application/json
 
 {
-        "sector_id" : 32,
+        "__id":"asdadsaaad",
+        "sector_id" : 324,
         "sector_nombre": "Tabaco",
         "variable_id": 841,
         "actividad_producto_nombre": "Cigarrillos 30 unidades",
@@ -18,6 +19,6 @@ Content-Type: application/json
         "alcance_tipo":"PAIS",
         "alcance_id":200,
         "alcance_nombre":"Argentina",
-        "indice_tiempo":"2022-10-26",
+        "indice_tiempo":"2022-12-26",
         "valor":2.2
     }
